@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors
+
 import "package:flutter/material.dart";
+import "package:flutter_application_1/screen1.dart";
 
 void main() {
   runApp(myApp());
@@ -10,19 +13,9 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'iransans'),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("MyApp"),
-          backgroundColor: Colors.redAccent,
-          foregroundColor: Colors.white,
-        ),
-        body: Container(),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Icon(Icons.add),
-        ),
-      ),
+      home: Screen1()
     );
   }
 }
